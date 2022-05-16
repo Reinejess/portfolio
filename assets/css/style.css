@@ -5,12 +5,13 @@
 }
 
 body {
+    background-color: #bfbfbf;
     color: black;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 header {
-    background-color: #bfbfbf;
+    background-color: grey;
     flex-wrap: wrap;
 }
 
@@ -19,11 +20,14 @@ header h1 {
     font-size: 60px;
     display: flex;
     justify-content: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
 } 
 
 header nav {
-    margin: 10px;
-    background-color: #000000;
+    margin: 0px;
+    background-color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 header nav ul {
@@ -45,20 +49,81 @@ header nav ul li a {
     color: aliceblue;
     width: 100%;
   }
+footer {
+    text-align: center;
+}
 
 .hero {
     background-image: url('../images/portfolio-hero.jpg');
     position:relative;
     background-position: center;
     height: 300px;
+    justify-content: center;
 }
+
 .section-title {
     color: black;
-    font-size: 40px;
+    font-size: 32px;
     display: inline-block;
     border-bottom: 5px solid;
 }
+
 .primary-border {
-    border-color: darkgreen;
+    border-color: rgb(1, 71, 1);
 }
 
+.pieces {
+    gap: 10px;
+    columns: 3;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    margin: 0;
+    padding: 0;
+
+}
+
+.pieces h3 {
+    line-height: 220px;
+}
+
+.first-piece {
+    display: flex;
+    padding: 5px;
+    margin: 10px 10px;
+    justify-content: center;
+}
+
+.first-piece img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    min-width: 300px;
+    height: 200px;
+    padding: 0;
+}
+
+.second-piece img {
+    min-width: 200px;
+    height: 100px;
+    padding: 0;
+   
+}
+.contact {
+    background-color: grey;
+}
+
+.contact h2 ul li a {
+    margin: 0 20px;
+    display: inline-block;
+    list-style: none;
+    font-size: 1.5vw;
+    width: 30%;
+}
+
+.contact a {
+    color: whitesmoke;
+    display:inline-block;
+    width: 100%;
+}
